@@ -1,0 +1,17 @@
+0-0 编译并运行Hello,World!程序
+答：
+$ vi 0_0.cpp
+$ g++ 0_0.cpp
+$ ./a.out
+
+0-1 下面的表达式是做什么的？
+3+4;
+答：
+表达式会让编译器进行运算，产生一个结果，还有可能产生副作用（important）——会影响程序或系统环境的状态
+3+4就是进行一个运算，结果为7，无副作用
+tips：
+std::out << "Hello, World!" << endl
+就是一个具有副作用的表达式，它会把Hello, World!写进标准输出流且结束当前行
+
+0-2 编写一个程序，使它在运行时输出：
+This (") is a quote, and this (\) is a backlash.
