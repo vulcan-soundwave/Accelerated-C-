@@ -1,13 +1,42 @@
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
+0. 2-0.cpp
+1. 2-1.cpp
+2. 2-2.cpp
+3. 2-3.cpp
+4. 2-4.cpp
+5. 2-5.cpp
+6. 2-6.cpp
+以行输出1-10这10个数字
+7. 2-7.cpp
+8. 2-8.cpp
+9. 2-9.cpp
+10. 
+一共有两次"std::"的使用
+第一次，声明了"using std::cout;"，所以"cout"可直接使用，而不用再次声明"std::cout"
+第二次，仍然需要写"std::"，因为第一次"std::"的使用只在其所在的作用域{}内有效
 
 小结：
 1. 运算符的优先级：
 算术运算符 > 关系运算符 > 逻辑运算符 > 赋值运算符
-参考表：http://blog.csdn.net/nicky_zs/article/details/4053146
+参考表：Accelerated C++ 33页
+Accelerated C++ 33页Accelerated C++ 33页
+2. 
+类型：
+size_t		无符号整数类型，可以保存任何对象的长度
+string::size_type	无符号整数类型，可以保存任何字符串的长度
 
+3. 如果一个变量是常量，需要在定义的时候初始化，否则不能再赋值
+
+4.
+error:
+2-4.cpp:20:25: 错误：从类型‘const char*’到类型‘char’的转换无效 [-fpermissive]
+  string temp(cols-2, " ");
+solution:
+"" --> ''
+5.
+error:
+2-4.cpp: 在函数‘int main()’中:
+2-4.cpp:22:34: 错误：对‘(std::string {aka std::basic_string<char>}) (long unsigned int, char)’的调用没有匹配
+  temp(pad<<1, ' ');
+                                  ^
+solution:
+temp.assign(pad<<1, ' ');
