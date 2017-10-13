@@ -1,4 +1,10 @@
 0. 
+书上有错误，
+using std::precision;错误
+$ g++ 3-0.cpp
+3-0.cpp:13:12: 错误：‘std::precision’尚未声明
+ using std::precision;
+            ^
 1. 
 2. 
 3. 
@@ -6,12 +12,15 @@
 5. 
 
 
-小结：
-1.
+#### 小结：
+1. 
 变量定义时就给初始化，否则程序很可能会以失败告终
-2.
+2. 
 vertor(向量)是一个存储数值集合的容器。在一个vector中的所有数值都具有相同的类型，但是不同的向量可以保存不同类型的对象。所以，我们只要定义了一个vector，我们就应该指定其所保存的数值的类型。
 我们应该使用库定义的size_type函数来表示容器的长度，这是良好的编程习惯。
-3.
+3. 
 语言工具typedef，typedef vector<double>::size_type vec_sz;中的typedef表示，我们所定义的vec_sz是size_type的替代名，除了名字用法、作用域完全一样。
-
+4. 
+setprecision控制器
+5. 
+linux下EOF --> ctrl+d
