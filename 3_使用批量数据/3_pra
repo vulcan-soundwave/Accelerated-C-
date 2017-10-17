@@ -1,12 +1,32 @@
-0. 
-书上有错误，
+
+0. 3-0.cpp
+##书上有错误，##
 using std::precision;错误
 $ g++ 3-0.cpp
 3-0.cpp:13:12: 错误：‘std::precision’尚未声明
  using std::precision;
             ^
-1. 
-2. 
+##Solution##
+将 using std::precision;去掉
+
+1. 3-1.cpp
+
+
+2. 3-2.cpp
+Please enter your number:
+16
+Please enter your figures:
+123 45 78 5 45 45 87 45 92 143 62 10 5 78 89 22                                       
+
+第1组:
+143 123 92 89 
+第2组:
+87 78 78 62 
+第3组:
+45 45 45 45 
+第4组:
+22 10 5 5 
+
 3. 
 4. 
 5. 
